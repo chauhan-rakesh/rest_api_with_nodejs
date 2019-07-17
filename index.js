@@ -18,6 +18,8 @@ var trimmedPath = path.replace(/^\/+|\/+$/g,'');
 //get the query string as object
 var queryStringObject = parseUrl.query;
 
+//get headers as object
+var headers = req.headers;
 
 //get the method
 var method = req.method.toLowerCase();
@@ -26,7 +28,7 @@ var method = req.method.toLowerCase();
 console.log("Hey it works");
 
 //log the request path
-console.log("request recieved on path:"+trimmedPath+" with method:"+method+"with the query string parameters as00: ",queryStringObject);
+console.log("Request recieved with these headers",headers);
 
 });
 //start the server and listen to port 4000
