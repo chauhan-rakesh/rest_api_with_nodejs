@@ -14,11 +14,15 @@ var parseUrl = url.parse(req.url,true);
 //get the path
 var path = parseUrl.pathname;
 var trimmedPath = path.replace(/^\/+|\/+$/g,'');
+
+//get the method
+var method = req.method.toLowerCase();
+
 //send the response
 console.log("Hey it works");
 
 //log the request path
-console.log("request recieved on path:"+trimmedPath);
+console.log("request recieved on path:"+trimmedPath+" with method:"+method);
 
 });
 //start the server and listen to port 4000
