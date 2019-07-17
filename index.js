@@ -26,7 +26,7 @@ var method = req.method.toLowerCase();
 console.log("Hey it works");
 
 //log the request path
-console.log("request recieved on path:"+trimmedPath+" with method:"+method+"with the query string as: "+queryStringObject);
+console.log("request recieved on path:"+trimmedPath+" with method:"+method+"with the query string parameters as00: ",queryStringObject);
 
 });
 //start the server and listen to port 4000
